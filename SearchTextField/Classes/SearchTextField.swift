@@ -286,7 +286,7 @@ open class SearchTextField: UITextField {
         }
         // Detect pauses while typing
         timer?.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 0.8, target: self, selector: #selector(SearchTextField.typingDidStop), userInfo: self, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(SearchTextField.typingDidStop), userInfo: self, repeats: false)
         
         if text!.isEmpty {
             clearResults()
