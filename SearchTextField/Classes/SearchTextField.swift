@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GooglePlaces
 
 open class SearchTextField: UITextField {
 
