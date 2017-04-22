@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 open class SearchTextField: UITextField {
 
@@ -517,6 +518,7 @@ public struct SearchTextFieldItem {
     public var title: String
     public var subtitle: String?
     public var image: UIImage?
+    public var autocompletePrediction: GMSAutocompletePrediction
     
     public init(title: String, subtitle: String?, image: UIImage?) {
         self.title = title
@@ -529,8 +531,9 @@ public struct SearchTextFieldItem {
         self.subtitle = subtitle
     }
 
-    public init(title: String) {
+    public init(title: String, autocompletePrediction: GMSAutocompletePrediction) {
         self.title = title
+        self.autocompletePrediction = autocompletePrediction
     }
 }
 
