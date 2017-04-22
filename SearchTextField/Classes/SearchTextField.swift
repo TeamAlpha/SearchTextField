@@ -529,7 +529,11 @@ public struct SearchTextFieldItem {
         self.title = title
         self.subtitle = subtitle
     }
-
+    
+    public init(title: String) {
+        self.title = title
+    }
+    
     public init(title: String, autocompletePrediction: GMSAutocompletePrediction) {
         self.title = title
         self.autocompletePrediction = autocompletePrediction
