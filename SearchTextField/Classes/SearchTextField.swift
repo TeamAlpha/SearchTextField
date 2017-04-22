@@ -517,7 +517,6 @@ public struct SearchTextFieldItem {
     public var title: String
     public var subtitle: String?
     public var image: UIImage?
-    public var autocompletePrediction: GMSAutocompletePrediction
     
     public init(title: String, subtitle: String?, image: UIImage?) {
         self.title = title
@@ -532,11 +531,6 @@ public struct SearchTextFieldItem {
     
     public init(title: String) {
         self.title = title
-    }
-    
-    public init(title: String, autocompletePrediction: GMSAutocompletePrediction) {
-        self.title = title
-        self.autocompletePrediction = autocompletePrediction
     }
 }
 
